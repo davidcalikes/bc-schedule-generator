@@ -4,15 +4,15 @@ body {
     margin: 0;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
 .top-nav {
     text-align: center;
     width: 110px;
     margin: 8px;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: center;
 }
 
 .logo {
@@ -29,6 +29,30 @@ body {
     font-weight: 400;
     font-family: Montserrat;
 }
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+#datesForm {
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
 
 .banner-title {
     text-align: center;
