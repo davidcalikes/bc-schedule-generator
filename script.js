@@ -1,4 +1,4 @@
-document.getElementById('dateForm').addEventListener('submit', function(event) {
+document.getElementById('datesForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const startDate = new Date(document.getElementById('start_date').value);
