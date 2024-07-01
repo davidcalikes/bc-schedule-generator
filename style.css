@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+}
+
+.top-nav {
+    text-align: center;
+    width: 110px;
+    margin: 8px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.title-banner {
+    height: 36px;
+    background-color: #fafafa;
+    border-top: 1px solid #e6ecf0;
+    border-bottom: 1px solid #e6ecf0;
+    line-height: 0px;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+.banner-title {
+    text-align: center;
+}
+
+.instructions-container {
+    text-align: center;
+    font-family: Montserrat;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.grade-selectors {
+    margin-top: 2rem;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-selector {
+   display: block;
+}
+
+select {
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    background-color: #e6ecf0;
+    border: solid 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.calculate-container {
+    text-align: center;
+    margin: 2rem;
+}
+
+.calculate-button {
+    display: inline-block;
+    font-family: Montserrat;
+    width: 200px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.625rem 0.625rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: 0.1875rem;
+    transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    color: #e6ecf0;
+    background-color: #445261;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.calculate-button:hover {
+    color: #445261;
+    background-color: #e6ecf0;
+}
+
+.reset-icon {
+    color: #42526e;
+    font-size: x-large;
+    margin-top: 1rem;
+}
+
+.reset-icon:hover {
+    color:#d2691e;
+    cursor: pointer;
+}
+
+.reset-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.reset-text-container {
+    margin-top: 0.5rem;
+    font-family: Montserrat;
+    font-weight:600;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.result-heading {
+    font-family: Montserrat;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#final-grade {
+    font-family: Montserrat;
+    color: chocolate;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.result-text {
+    font-family: Montserrat;
+    width: 70%;
+    margin-left: 15%;
+    font-weight: bold;
+}
+
+.warning-container {
+    margin-bottom: 2rem;
+}
+
+.icon-style {
+   font-size: xx-large;
+    color: #42526e;
+}
+
+.return-button {
+    display: inline-block;
+    font-family: Montserrat;
+    width: 200px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.625rem 0.625rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: 0.1875rem;
+    transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    text-decoration: none;
+    color: #445261;
+    border: 1px solid;
+    margin-bottom: 2rem;
+}
+
+.return-button:hover {
+    color: #e6ecf0;
+    background-color: #445261;
+}
+
+.icon-style {
+    color: red;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: #42526e;
+    border-top: 1px solid #e6ecf0;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+footer i {
+    color: #e6ecf0;
+    font-size: medium;
+}
+
+footer p {
+    font-family: Helvetica, sans-serif;
+    color: #e6ecf0;
+    margin: 0;
+    font-size: smaller;
+}
+
+.footer-window {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .grade-selectors {
+        display: block;
+    }
+    select {
+        width: 180px;
+        height: 40px;
+    }
+    .project-selector {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title-banner {
+        height: auto;
+        background-color: #fafafa;
+        border-top: 1px solid #e6ecf0;
+        border-bottom: 1px solid #e6ecf0;
+        line-height: 20px;
+        font-weight: 400;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-size: smaller;
+    }
+    .instructions-heading {
+        font-size: medium;
+    }
+}
