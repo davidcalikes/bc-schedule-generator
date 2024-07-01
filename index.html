@@ -6,6 +6,19 @@
     <title>CI 16wk Skills Bootcamps Schedule Generator</title>
  </head>
  <body>
-    
+    <h1>CI 16wk Skills Bootcamps | Schedule Generator</h1>
+    <form id="datesForm">
+        <div>
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+        </div>
+        <div>
+            <label for="holidays">Public Holidays (YYYY-MM-DD, separated by commas):</label>
+            <input type="text" id="holidays" name="holidays">
+        </div>
+        <button type="submit">Generate Schedule</button>
+    </form>
+    <div id="schedule"></div>
+    <script src="script.js"></script>
  </body>
  </html>   
