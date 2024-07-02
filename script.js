@@ -23,7 +23,7 @@ function generateSchedule(startDate, holidays) {
         let schedule = [];
         let currentDate = new Date(startDate);
         while (schedule.length < 80) {
-            if (isWeekend(currentDate) || isPublicHoliday(currentDate, holidays)) {
+            if (isWeekend(currentDate) || isPublicHoliday(currentDate, holidays) || isWinterBreak(currentDate)) {
                 currentDate.setDate(currentDate.getDate() + 1);
                 continue;
             }
@@ -45,6 +45,13 @@ function isPublicHoliday(date, holidays) {
         holiday.getMonth() === date.getMonth() &&
         holiday.getDate() === date.getDate()
     );
+}
+
+function isWinterBreak(date) {
+    const month = date.getMonth();
+    const day = date.getDate();
+    // Check if the date is between 23rd December and 1st January
+    return (month === 11 && day >= 23) || (month === 0 && day <= 1);
 }
 
 function formatDate(date) {
