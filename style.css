@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+h3 {
+    margin: 0.5rem;
+}
+
 .nav-container {
     display: flex;
     justify-content: center;
