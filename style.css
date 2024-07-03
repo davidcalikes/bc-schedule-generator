@@ -52,7 +52,7 @@ h3 {
     justify-content: center;
 }
 
-#datesForm {
+#dateForm {
     text-align: center;
 }
 
@@ -63,6 +63,21 @@ h3 {
 
 .banner-title {
     text-align: center;
+}
+
+#schedule {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#scheduleTable {
+    background-color: #e6eaf2;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    width: 40%;
 }
 
 .instructions-container {
@@ -95,7 +110,7 @@ select {
 
 label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin: 1rem;
 }
 
 .calculate-container {
@@ -103,10 +118,11 @@ label {
     margin: 2rem;
 }
 
-.calculate-button {
+.generate-button {
     display: inline-block;
     font-family: Montserrat;
     width: 200px;
+    margin-top: 1rem;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -123,9 +139,28 @@ label {
     text-decoration: none;
 }
 
-.calculate-button:hover {
+.generate-button:hover {
     color: #445261;
     background-color: #e6ecf0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.highlight {
+    background-color: #ffdddd;
 }
 
 .reset-icon {

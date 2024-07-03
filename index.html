@@ -23,17 +23,32 @@
         <h1>Schedule Generator</h1>
     </div>
     <div class="form-container">
-        <form id="datesForm">
+        <form id="dateForm">
             <label for="start_date">Start Date:</label>
             <input type="date" id="start_date" name="start_date" required>
-        <div>
-            <label for="holidays">Public Holidays (YYYY-MM-DD, separated by commas):</label>
-            <input type="text" id="holidays" name="holidays">
-        </div>
-        <button type="submit">Generate Schedule</button>
+            <div>
+                <label for="region">Select Region:</label>
+                <select id="region" name="region">
+                    <option value="ireland">Ireland</option>
+                    <option value="england_wales">England & Wales</option>
+                </select>
+            </div>
+        <button class="generate-button" type="submit">Generate Schedule</button>
         </form>
     </div>
-    <div id="schedule"></div>
+    <div id="schedule">
+        <table id="scheduleTable">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Schedule will be inserted here -->
+            </tbody>
+        </table>
+    </div>
 </div>
     <script src="script.js"></script>
  </body>
